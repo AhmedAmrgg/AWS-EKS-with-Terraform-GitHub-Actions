@@ -180,23 +180,15 @@ aws eks update-kubeconfig --name my-eks-cluster --region us-east-1
 kubectl get nodes
 ```
 ##  📊 Example Outputs
-
-VPC ID
-
-EKS Cluster Endpoint
-
-IAM Roles created for addons
-
-Installed Kubernetes addons (EBS CSI, AWS Load Balancer Controller)
+- VPC ID
+- EKS Cluster Endpoint
+- IAM Roles created for addons
+- Installed Kubernetes addons (EBS CSI, AWS Load Balancer Controller)
 
 🌟 Future Improvements
+- Add monitoring stack (Prometheus + Grafana)
+- Add logging stack (EFK / Loki)
+- Add sample application deployment
+- Integrate ArgoCD for GitOps
 
-Add monitoring stack (Prometheus + Grafana)
 
-Add logging stack (EFK / Loki)
-
-Add sample application deployment
-
-Integrate ArgoCD for GitOps
-
-# AWS-EKS-with-Terraform-GitHub-Actions
