@@ -3,13 +3,11 @@ name: zone infra cicd
 on:
   push:
     branches:
-      - preprod
-      - prod
       - main
 
 jobs:
   terraform-pre-prod:
-    if: github.ref == 'refs/heads/preprod'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     defaults:
       run:
