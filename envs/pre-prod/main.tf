@@ -19,15 +19,15 @@ module "Network" {
   vpc_database_subnets                   = var.vpc_database_subnets    
 }
  
-module "EBS" {
-  source = "../../modules/EBS"
-  cluster_name      = module.EKS.cluster_name
-  cluster_endpoint  = module.EKS.cluster_endpoint
-  cluster_ca        = module.EKS.cluster_ca
-  cluster_token     = data.aws_eks_cluster_auth.eks_cluster.token
-  oidc_provider_arn = module.EKS.oidc_provider_arn
-  oidc_provider_url = module.EKS.oidc_provider_url
-}
+# module "EBS" {
+#   source = "../../modules/EBS"
+#   cluster_name      = module.EKS.cluster_name
+#   cluster_endpoint  = module.EKS.cluster_endpoint
+#   cluster_ca        = module.EKS.cluster_ca
+#   cluster_token     = data.aws_eks_cluster_auth.eks_cluster.token
+#   oidc_provider_arn = module.EKS.oidc_provider_arn
+#   oidc_provider_url = module.EKS.oidc_provider_url
+# }
  
 # module "ALB" {
 #   source = "../../modules/ALB"
