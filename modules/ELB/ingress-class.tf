@@ -8,7 +8,7 @@
 #     }
 #   }  
 #   spec {
-#     controller = "ingress.k8s.aws/alb"
+#     controller = "ingress.k8s.aws/elb"
 #   }
 # }
 

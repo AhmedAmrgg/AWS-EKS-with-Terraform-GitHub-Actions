@@ -29,8 +29,8 @@
 #   oidc_provider_url = module.EKS.oidc_provider_url
 # }
  
-# module "ALB" {
-#   source = "../../modules/ALB"
+# module "ELB" {
+#   source = "../../modules/ELB"
 #   cluster_name      = module.EKS.cluster_name
 #   cluster_endpoint  = module.EKS.cluster_endpoint
 #   cluster_ca        = module.EKS.cluster_ca
