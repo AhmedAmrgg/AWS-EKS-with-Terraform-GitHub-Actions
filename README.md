@@ -29,6 +29,10 @@ The goal is to demonstrate **Infrastructure as Code (IaC)** and **CI/CD practice
 
 ---
 
+## 🏗️ Architecture Diagram
+
+![Architecture Diagram](project-1-v2-drawio.png)
+
 ## ⚙️ Tools & Technologies  
 - **AWS** (VPC, EKS, IAM, EBS, ELB)  
 - **Terraform** (IaC)  
