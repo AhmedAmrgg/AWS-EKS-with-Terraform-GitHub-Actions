@@ -21,14 +21,14 @@ provider "kubernetes" {
   token = data.aws_eks_cluster_auth.eks_cluster.token
 }
 
-data "aws_eks_cluster" "eks_cluster" {
-  name = var.cluster_name
-}
+# data "aws_eks_cluster" "eks_cluster" {
+#   name = var.cluster_name
+# }
 
-data "aws_eks_cluster_auth" "eks_cluster" {
-  name = var.cluster_name
-  # depends_on = [module.EKS]
-}
+# data "aws_eks_cluster_auth" "eks_cluster" {
+#   name = var.cluster_name
+#   # depends_on = [module.EKS]
+# }
  
 provider "helm" {
   kubernetes = {
