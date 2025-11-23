@@ -1,11 +1,11 @@
 
-# module "EKS" {
-#   source     = "../../modules/EKS"
-#   cluster_name    = var.cluster_name
-#   subnet_ids      = module.Network.public_subnets
-#   private_subnets = module.Network.private_subnets
-#   public_subnets  = module.Network.public_subnets 
-# }
+module "EKS" {
+  source     = "../../modules/EKS"
+  cluster_name    = var.cluster_name
+  subnet_ids      = module.Network.public_subnets
+  private_subnets = module.Network.private_subnets
+  public_subnets  = module.Network.public_subnets 
+}
  
 module "Network" {
   source = "../../modules/Network"
