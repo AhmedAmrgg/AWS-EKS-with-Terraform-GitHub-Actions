@@ -183,6 +183,7 @@ Verify EKS cluster:
 aws eks update-kubeconfig --name my-eks-cluster --region us-east-1
 kubectl get nodes
 ```
+
 ##  📊 Example Outputs
 - VPC ID
 - EKS Cluster Endpoint
