@@ -3,7 +3,7 @@ name: zone infra cicd
 on:
   push:
     branches:
-      - pre-prod
+      - pre-prod 
 
 jobs:
   terraform-pre-prod:
